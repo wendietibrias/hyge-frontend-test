@@ -1,0 +1,45 @@
+
+export default [
+    {
+        image:'/static/assets/images/client1.png'
+    },
+    {
+        image:'/static/assets/images/client2.png'
+    },
+    {
+        image:'/static/assets/images/client3.png'
+    },
+    {
+        image:'/static/assets/images/client4.png'
+    },
+    {
+        image:'/static/assets/images/client5.png'
+    },
+    {
+        image:'/static/assets/images/client6.png'
+    },
+    {
+        image:'/static/assets/images/client7.png'
+    },
+    {
+        image:'/static/assets/images/client8.png'
+    },
+    {
+        image:'/static/assets/images/client9.png'
+    },
+    {
+        image:'/static/assets/images/client10.png'
+    },
+    {
+        image:'/static/assets/images/client11.png'
+    },
+    {
+        image:'/static/assets/images/client12.png'
+    },
+    {
+        image:'/static/assets/images/client13.png'
+    },
+    {
+        image:'/static/assets/images/client1.png'
+    }
+]
