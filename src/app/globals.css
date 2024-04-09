@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html{
+    width:100%;;
     overflow-x:hidden;
 }
 
@@ -13,4 +14,5 @@ html{
 body{
     min-height:100vh;
     background: linear-gradient(190deg,#0E0533, #111111);
+    overflow-x:hidden;
 }

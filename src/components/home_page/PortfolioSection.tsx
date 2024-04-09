@@ -11,7 +11,7 @@ import { motion } from "framer-motion"
 const PortofolioSection = () => {
     return (
         <section className="w-full pb-10">
-            <div className="grid grid-cols-2 xs:grid-cols-1 gap-5">
+            <div className="grid grid-cols-2 sm:grid-cols-1 gap-5">
                 {portfolios.map((item:IPortfolioResponse,idx:number) => (
                       <motion.div
                          key={idx}
@@ -31,7 +31,7 @@ const PortofolioSection = () => {
                       >
                        <Link href={`/${item.title}`}>
                           <div className="w-full border rounded-xl p-3 border-solid border-white/10">
-                          <div className="w-full h-[260px] relative">
+                          <div className="w-full h-[300px] relative">
                             <Image src={item.image} alt={item.title} fill className="object-cover rounded-xl"/>
                           </div>
                           <div className="w-full">
@@ -40,7 +40,7 @@ const PortofolioSection = () => {
                                   {item.categories.map((item:{ title:string },idx:number) => <GradientButton key={idx} title={item.title}/>)}
                                 </div>
                                   <h3 className="text-xl font-semibold mt-4 mb-3">{item.title}</h3>
-                                  <p className="text-description line-clamp-3 text-sm pr-10 xs:pr-0  overflow-hidden text-ellipsis">{item.description}</p>
+                                  <p className="text-description line-clamp-3 text-sm pr-10 sm:pr-0  overflow-hidden text-ellipsis">{item.description}</p>
                                 </div>
                           </div>
                         </div>
