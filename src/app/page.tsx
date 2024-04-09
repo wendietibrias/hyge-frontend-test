@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-      <main className="max-w-[1120px] sm:w-full mx-auto lg:px-10 xs:px-5">
+      <main className="max-w-[1200px] sm:w-full mx-auto lg:px-10 xs:px-5">
          <HeroSection/>
          <PortofolioSection/>
          <OurClientSection/>
