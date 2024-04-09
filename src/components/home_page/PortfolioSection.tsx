@@ -31,8 +31,8 @@ const PortofolioSection = () => {
                       >
                        <Link href={`/${item.title}`}>
                           <div className="w-full border rounded-xl p-3 border-solid border-white/10">
-                          <div className="w-full h-[300px] relative">
-                            <Image src={item.image} alt={item.title} fill className="object-cover rounded-xl"/>
+                          <div className="w-full max-w-full h-[300px] xs:h-[260px] relative">
+                            <Image src={item.image} alt={item.title} fill className="object-fill rounded-xl"/>
                           </div>
                           <div className="w-full">
                                 <div className="w-full  mt-5 rounded-xl border border-solid p-4 bg-gradient-to-b from-[#000]/0 to-[#fff]/5 border-white/10 text-title-alt">

@@ -15,7 +15,7 @@ const ProjectDetailSection = () => {
             <h4 className="text-secondary-alt font-semibold text-xl">Tech Stack</h4>
             <div className="rounded-xl mb-10 mt-7 sm:grid-cols-2 sm:gap-y-5 grid grid-cols-4 gap-x-5 border border-white/10 p-3">
                {techStacks.map((item: ITechStack,idx:number) => (
-                  <div className="w-full flex text-description items-center p-4 rounded-xl border border-white/10 flex-col" key={idx}>
+                  <div className="w-full flex text-description bg-gradient-to-b from-[#000]/0 to-[#fff]/5 items-center p-4 rounded-xl border border-white/10 flex-col" key={idx}>
                      <Image src={item.image} alt={item.title}  width={idx === 0 ? 48 : 70} height={idx=== 0 ? 50 : 95}/>
                      <h4 className="mt-3">{item.title}</h4>
                   </div>

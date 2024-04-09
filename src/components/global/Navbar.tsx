@@ -53,8 +53,8 @@ const Navbar = () => {
                 <button onClick={()=>setIsShow(false)} className="text-white xs:block hidden text-xl font-bold absolute top-3 right-5">x</button>
             </ul>
             <button className="xs:hidden bg-[#545968]/10 text-[#F5F5FF]/40 text-sm py-3 px-5 rounded-full cursor-pointer">Let's talk</button>
-           <motion.div className="xs:block hidden" initial={{ opacity:0,y:-20 }} animate={controls}>
-              <div className="flex fixed z-[99] top-6 left-[50%] -translate-x-[50%]  bg-[#0E0533]  rounded-full gap-x-3 items-center p-2">
+            <motion.div className="xs:block hidden" initial={{ opacity:0,y:-20 }} animate={controls}>
+              <div className="w-[200px] mx-auto flex fixed z-[99] top-6 left-[50%] -translate-x-[50%]  bg-[#0E0533]  rounded-full gap-x-3 items-center p-2">
                     <button onClick={()=> setIsShow(true)} className="flex items-center text-[13px] bg-white/10 rounded-full py-2 px-3 border border-white/10 text-secondary-alt">
                         Menu 
                         <Image src="/static/assets/icons/menu.png" alt="menu" width={24} height={24}/>
