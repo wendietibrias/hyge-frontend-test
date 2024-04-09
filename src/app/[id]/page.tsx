@@ -5,6 +5,12 @@ import {
     ProjectDetailSection
 } from '@/components';
 import { BookingSection } from "@/components/home_page";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title:'Hyge | Detail',
+    description:'hyge portofolio detail'
+}
 
 const Detail = () => {
     return (

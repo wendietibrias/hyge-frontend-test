@@ -23,7 +23,8 @@ const Navbar = () => {
 
 
     return (
-        <nav className="w-full  bg-title/5 xs:bg-transparent  xl:px-10 px-32 xs:px-5 py-5  flex items-center justify-between">
+        <nav className="w-full  bg-title/5 sm:bg-transparent  sm:px-5 py-5 ">
+            <div className="max-w-[1250px] sm:w-full mx-auto  flex items-center justify-between">
             <Link href="/">
                <Image src="/static/assets/images/company_logo.png" alt="Hyge" width={100} height={28}/>
             </Link>
@@ -63,6 +64,7 @@ const Navbar = () => {
                     </button>
                 </div>
            </motion.div>
+            </div>
          </nav>
     )
 }
