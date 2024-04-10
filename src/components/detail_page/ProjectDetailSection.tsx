@@ -2,16 +2,19 @@ import techStacks from "@/common/constants/project_techs_stack"
 import Image from "next/image"
 import { ITechStack } from "@/interfaces/tech_stack"
 import { PrimaryButton } from "../global"
+import { VektorLine } from '@/components';
 
 const ProjectDetailSection = () => {
   return (
-    <section className="w-full py-16">
+    <section className="w-full py-16 sm:py-10 relative">
+        <VektorLine path="/static/assets/background/vektor-detail-page.png" alt="vektor line" style="absolute top-24  -left-20" />
+        <VektorLine path="/static/assets/background/vector 25.png" alt="vektor line" style="absolute top-7 -right-32 xl:hidden"/>
         <h1 className="text-5xl font-bold text-secondary-alt sm:text-[32px]">Levare Decanter</h1>
         <p className="text-[16px] sm:text-[14px] text-description mt-10">
           Through Levare website, we aim to share the joy of authentic wine enjoyment by offering innovative products that enhance the tasting experience, provide valuable resources and knowledge, and foster a vibrant community of wine lovers.
         </p>
 
-        <div className="py-16 border-b border-white/10">
+        <div className="py-16 sm:py-10 border-b border-white/10">
             <h4 className="text-secondary-alt font-semibold text-xl">Tech Stack</h4>
             <div className="rounded-xl mb-10 mt-7 sm:grid-cols-2 sm:gap-y-5 grid grid-cols-4 gap-x-5 border border-white/10 p-3">
                {techStacks.map((item: ITechStack,idx:number) => (
@@ -24,7 +27,7 @@ const ProjectDetailSection = () => {
             <PrimaryButton title="Visit Site"/>
         </div>
 
-        <div className="w-full py-16">
+        <div className="w-full py-16 sm:py-10">
           <h4 className="text-secondary-alt font-semibold text-xl">Description</h4>
           <p className="text-[16px] w-[90%] text-description mt-10">
            Levare Decanter is a revolutionary wine accessory designed to enhance your wine tasting experience by providing optimal aeration for your favorite wines. Crafted with precision and innovation, the Levare Decanter is the result of unwavering commitment to bringing out the true flavors, aromas, and bouquets of wines. 

@@ -4,13 +4,15 @@ import portfolios from "@/common/constants/portfolios"
 import Image from "next/image"
 import Link from "next/link"
 import { IPortfolioResponse } from "@/interfaces/portoflios_response"
-import { GradientButton } from "../global"
+import { GradientButton,VektorLine } from "@/components";
 import { motion } from "framer-motion"
 
 
 const PortofolioSection = () => {
     return (
-        <section className="w-full pb-10">
+        <section className="w-full pb-16 sm:pb-10 relative">
+            <VektorLine path="/static/assets/background/vector 26.png" alt="vektor line" style="absolute -top-14 -right-20 h-full" />
+            <VektorLine path="/static/assets/background/vector 27.png" alt="vektor line" style="absolute -top-14 -left-20 h-full"/>
             <div className="grid grid-cols-2 sm:grid-cols-1 gap-5">
                 {portfolios.map((item:IPortfolioResponse,idx:number) => (
                       <motion.div
@@ -31,7 +33,7 @@ const PortofolioSection = () => {
                       >
                        <Link href={`/${item.title}`}>
                           <div className="w-full border rounded-xl p-3 border-solid border-white/10">
-                          <div className="w-full max-w-full h-[300px] xs:h-[260px] relative">
+                          <div className="w-full max-w-full h-[270px] relative">
                             <Image src={item.image} alt={item.title} fill className="object-fill rounded-xl"/>
                           </div>
                           <div className="w-full">
@@ -40,7 +42,7 @@ const PortofolioSection = () => {
                                   {item.categories.map((item:{ title:string },idx:number) => <GradientButton key={idx} title={item.title}/>)}
                                 </div>
                                   <h3 className="text-xl font-semibold mt-4 mb-3">{item.title}</h3>
-                                  <p className="text-description line-clamp-3 text-sm pr-10 sm:pr-0  overflow-hidden text-ellipsis">{item.description}</p>
+                                  <p className="text-description leading-6 line-clamp-3 text-sm pr-10 sm:pr-0  overflow-hidden text-ellipsis">{item.description}</p>
                                 </div>
                           </div>
                         </div>

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="w-full   border-top border-white/10 py-10  z-[999] lg:px-10 sm:px-5">
-            <div className="flex items-start gap-x-14 sm:w-full max-w-[1300px] mx-auto sm:flex-col lg:gap-y-10 flex-wrap">
+        <footer className="w-full  border-top border-white/10 py-10 z-[999] xl:px-10 sm:px-5">
+            <div className="flex items-start gap-x-14 xl:w-full lg:justify-between  max-w-[1250px] mx-auto sm:flex-col lg:gap-y-12 flex-wrap">
                 <div className="w-[330px] sm:w-full lg:w-[40%]">
                   <Image src="/static/assets/images/company_logo.png" alt="Hyge" width={100} height={28}/>
                   <p className="text-[15px] my-6 text-description">

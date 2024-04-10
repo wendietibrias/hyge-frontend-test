@@ -23,13 +23,13 @@ const Navbar = () => {
 
 
     return (
-        <nav className="w-full  bg-title/5 sm:bg-transparent  lg:px-10 sm:px-5 py-5 ">
-            <div className="max-w-[1350px] sm:w-full mx-auto  flex items-center justify-between">
+        <nav className="bg-title/5 sm:bg-transparent xl:px-10 sm:px-5 py-5">
+            <div className="max-w-[1250px] xl:w-full mx-auto flex items-center justify-between">
             <Link href="/">
                <Image src="/static/assets/images/company_logo.png" alt="Hyge" width={100} height={28}/>
             </Link>
             <ul className={
-                `transition-all  duration-700 flex xs:w-[70%] xs:gap-y-3 xs:py-10 xs:rounded-none xs:h-screen xs:bg-[#0E0533] z-[9999] lg:items-start lg:fixed lg:top-0 ${isShow ? "lg:left-0":"lg:-left-[100%]"} lg:flex-col items-center py-4 px-8 rounded-full gap-x-12 bg-[#D1E1FF]/10 text-white`
+               `transition-all  duration-700 flex xs:w-[70%] xs:gap-y-3 xs:py-10 xs:rounded-none xs:h-screen xs:bg-[#0E0533] z-[9999] lg:items-start lg:fixed lg:top-0 ${isShow ? "lg:left-0":"lg:-left-[100%]"} lg:flex-col items-center py-4 px-8 rounded-full gap-x-12 bg-[#D1E1FF]/10 text-white`
             }>
                 <li>
                     <a href="/" className="text-sm hover:text-secondary transition-colors duration-150">Home</a>

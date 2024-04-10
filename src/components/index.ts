@@ -4,7 +4,8 @@ import {
     Navbar,
     Footer,
     GradientButton,
-    PrimaryButton
+    PrimaryButton,
+    VektorLine
 } from "./global";
 
 //detail_page components 
@@ -30,5 +31,6 @@ export {
     GradientButton,
     PrimaryButton,
     HeroDetailSection,
-    ProjectDetailSection
+    ProjectDetailSection,
+    VektorLine
 }

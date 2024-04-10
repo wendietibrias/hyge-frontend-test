@@ -2,8 +2,8 @@
 
 const BookingSection = () => {
   return (
-     <section className="w-full py-16  text-center h-[90vh] sm:h-full relative  overflow-y-hidden overflow-x-hidden sm:mt-0">
-        <div className="w-full mt-32 sm:mt-0">
+     <section className="w-full pt-16 pb-20 sm:py-10 text-center h-[90vh] lg:h-full relative overflow-y-hidden overflow-x-hidden">
+        <div className="w-full mt-32 lg:mt-0">
           <h1 className="text-5xl sm:text-[32px] font-bold text-white tracking-wide">We can help to improve your bussiness <span className="text-secondary mt-5 block">by upgrading your technology!</span></h1>
           <p className="text-description text-[18px] mt-10 mb-8">Schedule a free 30 mins call with us</p>
           <button className="py-4 px-8 rounded-full cursor-pointer bg-secondary text-white text-sm">
