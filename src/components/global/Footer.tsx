@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="flex items-start gap-x-14 xl:w-full lg:justify-between  max-w-[1250px] mx-auto sm:flex-col lg:gap-y-12 flex-wrap">
                 <div className="w-[330px] sm:w-full lg:w-[40%]">
                   <Image src="/static/assets/images/company_logo.png" alt="Hyge" width={100} height={28}/>
-                  <p className="text-[15px] my-6 text-description">
+                  <p className="text-[15px] sm:text-[13px] my-6 text-description">
                    Hyge is a Singapore based company that provides customisation and specialisation in website design, development, as well as mobile app development. 
                   </p>
                   <h5 className="flex items-center font-semibold text-description text-sm gap-x-3">
